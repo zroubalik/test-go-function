@@ -1,0 +1,26 @@
+version: 0.0.0
+name: test-go-function
+namespace: ""
+runtime: go
+registry: ""
+image: ""
+imageDigest: ""
+build: local
+git: {}
+builder: ""
+builders: {}
+buildpacks:
+- paketo-buildpacks/go-dist
+- ghcr.io/boson-project/go-function-buildpack:tip
+volumes: []
+buildEnvs: []
+envs: []
+annotations: {}
+options: {}
+labels: []
+healthEndpoints:
+  liveness: /health/liveness
+  readiness: /health/readiness
+created: 2022-04-20T13:37:32.734102+02:00
+invocation:
+  format: http
